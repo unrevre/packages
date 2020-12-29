@@ -1,0 +1,8 @@
+# files without extension (exclude PKGBUILD)
+*
+!*.*
+!*/
+!PKGBUILD
+
+# built packages
+*.pkg.tar.zst
