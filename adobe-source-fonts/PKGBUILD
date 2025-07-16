@@ -1,31 +1,31 @@
 # Maintainer: Ran Bi <unrevre@gmail.com>
 
-pkgname=ttf-fonts-custom
+pkgname=adobe-source-fonts
 pkgver=2025.07.16
-pkgrel=1
-pkgdesc="Custom fonts package"
+pkgrel=2
+pkgdesc="Adobe Source fonts package"
 url="https://adobe-fonts.github.io/"
 arch=(any)
 license=(OFL-1.1)
 provides=("ttf-font")
-depends=("ttf-cascadia-code" "adobe-source-han-sans-otc-fonts" "adobe-source-han-serif-otc-fonts")
+depends=("adobe-source-code-pro-fonts" "adobe-source-han-sans-otc-fonts" "adobe-source-han-serif-otc-fonts")
 conflicts=("adobe-source-sans-fonts" "adobe-source-serif-fonts")
 _ver_sans=3.052R
 _ver_serif=4.005R
 source=(
   "source-sans-$_ver_sans.tar.gz::https://github.com/adobe-fonts/source-sans/archive/refs/tags/$_ver_sans.tar.gz"
   "source-serif-$_ver_serif.tar.gz::https://github.com/adobe-fonts/source-serif/archive/refs/tags/$_ver_serif.tar.gz"
-  46-source-sans.conf 46-source-serif.conf 46-cascadia-mono.conf
-  66-source-sans.conf 66-source-serif.conf 66-cascadia-mono.conf
+  46-source-mono.conf 46-source-sans.conf 46-source-serif.conf
+  66-source-mono.conf 66-source-sans.conf 66-source-serif.conf
 )
 b2sums=('7cb3965a4172c467f2fd536b1ea96d65bdb41c8546baa9f318adedca217601762cf506d050afd2e9f4e4fb840282734254cec484ac40178e62d9539308d56ddd'
         '7dec81fd559a0bf620b2351dc26f2a481825a77148019797b5726699cc3e5977194278e8ef5cc6acd2dea8e30f8b19afa12dd301abbbf75bb192a9e7bfbde51d'
+        '6e8887ab52bd68e5db0220363171e0a7c8f1ca1fc6f4930a82461a4e96d1d7458276983ce2dc8bdcbe8cdf481bf41751e80ba7e240ba324520fbb0505bef1151'
         'ec40e783dca7974b4706dffc848bcc978d939412a84c2541ac00f5b34219ab82d276c1e0d4e1202e4139ecafab02cab3d67fbf5ab86b96a33f6abe62682a6d5d'
         'f615bab4a1a56025d6606f5ad3d8139ab83410e76a202c3b84dc29ff4d3cea4f05f19d5b4d79041456e7691c0c3fb220cd77f7e1602e112607eca7d719d8ff98'
-        '5869172b2f9d08c0427e2cf63421ed42041af8a90e4fa83971ca3d6a07245fbe64b4233d04d86628091e84e6c1f747a1246aebac8c47f567a776ab2914b5d665'
+        '01245e98243b5c34b2d1967687b4cc5a0c2ca8ed47832c965b99bb473761da54a7b36f9bbe150985d311dbbc70479bda84d7fb0938253ee70f24d359ed78b460'
         'db1e76e2481d3a17eb24612d17c254017882561475fcd1efcd48570e298d47b1845354642b6ba3ca1c769d12a3cf28f95e47f60f4590661a5ce6b4f5afe090b4'
-        'c963bb34211604e183cf320c69921da64bde3de47c98e1535963f259dbae1d8449f8e4feca23089b309eed170f29c89e65098bb3094f6ac6fa8fbf8eb831a2d1'
-        '6c7a9ba7e2c3ffcc8287473ece260d72496dc2a594bc685f22b20850936b1743b9eec420b8abd5460a6c37917d1167b1d1144d346cbbcf13a040d439c47d611d')
+        'c963bb34211604e183cf320c69921da64bde3de47c98e1535963f259dbae1d8449f8e4feca23089b309eed170f29c89e65098bb3094f6ac6fa8fbf8eb831a2d1')
 
 package() {
   # "Source Sans 3"
