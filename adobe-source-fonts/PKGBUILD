@@ -1,14 +1,26 @@
 # Maintainer: Ran Bi <unrevre@gmail.com>
 
 pkgname=adobe-source-fonts
-pkgver=2025.07.16
-pkgrel=2
+pkgver=2025.07.30
+pkgrel=1
 pkgdesc="Adobe Source fonts package"
 url="https://adobe-fonts.github.io/"
 arch=(any)
 license=(OFL-1.1)
 provides=("ttf-font")
-depends=("adobe-source-code-pro-fonts" "adobe-source-han-sans-otc-fonts" "adobe-source-han-serif-otc-fonts")
+depends=(
+  "adobe-source-code-pro-fonts"
+  "adobe-source-han-sans-cn-fonts"
+  "adobe-source-han-sans-hk-fonts"
+  "adobe-source-han-sans-tw-fonts"
+  "adobe-source-han-sans-jp-fonts"
+  "adobe-source-han-sans-kr-fonts"
+  "adobe-source-han-serif-cn-fonts"
+  "adobe-source-han-serif-hk-fonts"
+  "adobe-source-han-serif-tw-fonts"
+  "adobe-source-han-serif-jp-fonts"
+  "adobe-source-han-serif-kr-fonts"
+)
 conflicts=("adobe-source-sans-fonts" "adobe-source-serif-fonts")
 _ver_sans=3.052R
 _ver_serif=4.005R
